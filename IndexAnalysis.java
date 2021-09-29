@@ -1,4 +1,4 @@
-public class Analytica {
+public class IndexAnalysis {
     public String indexAnalysis(double index) {
         String analysis;
         if (index < 20.0) {

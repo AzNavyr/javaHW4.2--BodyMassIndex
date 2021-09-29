@@ -1,15 +1,15 @@
-public class MassIndex {
+public class BodyMassIndex {
     public static void main(String[] args) {
-        IndexService service = new IndexService();
-        Analytica service1 = new Analytica();
-        Analytica1 service2 = new Analytica1();
+        BmiService service = new BmiService();
+        IndexAnalysis service1 = new IndexAnalysis();
+        IndexAnalysis2 service2 = new IndexAnalysis2();
         double height = 1.82;
-        int weight = 99;
-        int age = 33;
+        int weight = 85;
+        int age = 25;
         double massIndex = service.calculate(height, weight);
         String massIndex1 = String.format("%.1f.", massIndex);
-        String analysisResults = service1.indexAnalysis(massIndex);
-        String analysisResults2 = service2.indexAnalysis2(massIndex);
+        String analysisResults = service2.indexAnalysis2(massIndex);
+        String analysisResults2 = service1.indexAnalysis(massIndex);
         String age1 = null;
         if (age >= 18 && age < 30) {
             age1 = analysisResults;
